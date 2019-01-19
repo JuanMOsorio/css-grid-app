@@ -1,0 +1,8 @@
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  /* Repite el numero de columna que se requieren. */
+  grid-template-columns: 200px repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
