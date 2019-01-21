@@ -1,0 +1,27 @@
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px);
+
+  /* Alineando elementos... */
+
+  /* Horizontal */
+  justify-items: center;
+
+  /* Vetical */
+  align-items: center;
+
+}
+
+.container .item {
+  background: #ff8000;
+
+  /* Mal!!! */
+  width: 100%;
+
+  /* Bien!!! */
+  justify-self: stretch;
+  align-self: stretch;
+}
